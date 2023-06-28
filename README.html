@@ -1,0 +1,217 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:24.0pt;font-family:"Segoe UI",sans-serif;color:#1F2328'>Introduction</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>This repository
+contains models and tools discussed in the following paper:</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>Fietkiewicz, C.,
+Corrales Marco, D., Chiel, H. J. and Thomas, P. J. (2023). Tutorial: Using
+NEURON for Neuromechanical Simulations.&nbsp;<i>Frontiers in Computational
+Neuroscience</i>&nbsp;17: 1143323. [<a
+href="https://www.frontiersin.org/articles/10.3389/fncom.2023.1143323/"><span
+style='text-decoration:none'>Link</span></a>]</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>All models
+require&nbsp;<a href="https://nrn.readthedocs.io"><span
+style='text-decoration:none'>NEURON</span></a>&nbsp;to be installed, and Python
+versions require&nbsp;<a href="https://python.org/"><span style='text-decoration:
+none'>Python</span></a>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>Address questions and
+comments to Dr. Chris Fietkiewicz (<a href="mailto:fietkiewicz@hws.edu"><span
+style='text-decoration:none'>fietkiewicz@hws.edu</span></a>). The following
+sections are available:</span></p>
+
+<p class=MsoNormal style='margin-top:.25in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in;background:white'><b><span style='font-size:24.0pt;font-family:
+"Segoe UI",sans-serif;color:#1F2328'>Models</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>This collection of
+NEURON models demonstrates various concepts for neuromechanical simulations
+using pointers, as detailed in the paper above (Fietkiewicz et al.).</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>Each model is
+independent of the others, with all necessary files in a single directory. Most
+models have both a hoc version and a Python version, each in a separate
+directory. The following steps can be used to run each of the models and
+produce the output shown in the paper cited above:</span></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='color:#1F2328;margin-top:12.0pt;margin-bottom:12.0pt;
+     background:white'><span style='font-family:"Segoe UI",sans-serif'>Compile
+     the .mod files in the selected directory.</span></li>
+ <li class=MsoNormal style='color:#1F2328;margin-top:12.0pt;margin-bottom:12.0pt;
+     background:white'><span style='font-family:"Segoe UI",sans-serif'>For most
+     models, run either run.hoc or run.py, depending on the version you are
+     working with. For “5-AplysiaLoop”, the hoc version has two different .hoc
+     files, each of which uses a different setting for the parameter “mu” (see
+     the paper for details).</span></li>
+ <li class=MsoNormal style='color:#1F2328;margin-top:12.0pt;margin-bottom:12.0pt;
+     background:white'><span style='font-family:"Segoe UI",sans-serif'>For hoc
+     versions, click Init &amp; Run from Run Control GUI. Most Python versions
+     run the simulation automatically. For “5-AplysiaLoop”, however, the Python
+     version provides a single GUI where certain parameters may be set and the
+     user must click the Init &amp; Run button.</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>The following models
+are available:</span></p>
+
+<p class=MsoNormal style='margin-top:.25in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in;background:white'><b><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif;color:#1F2328'>1-Neuromuscular</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>Neuromuscular</span></b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>&nbsp;is adapted from a
+neuromuscular model from Kim, Hojeong. &quot;Muscle length-dependent
+contribution of motoneuron Cav1. 3 channels to force production in model slow
+motor unit.&quot;&nbsp;<i>Journal of Applied Physiology</i>&nbsp;123.1 (2017):
+88-105., Kim, Hojeong. &quot;Linking motoneuron PIC location to motor function
+in closed-loop motor unit system including afferent feedback: a computational
+investigation.&quot;&nbsp;<i>Eneuro</i>&nbsp;7.2 (2020)., and Kim, Hojeong, and
+Charles J. Heckman. &quot;A dynamic calcium-force relationship model for sag
+behavior in fast skeletal muscle.&quot;&nbsp;<i>PLOS Computational Biology</i>&nbsp;19.6
+(2023): e1011178.</span></p>
+
+<p class=MsoNormal style='margin-top:.25in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in;background:white'><b><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif;color:#1F2328'>2-OscillatorLoop</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>OscillatorLoop</span></b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>&nbsp;is adapted from a
+closed-loop motor control model from Yu, Zhuojun, and Peter J. Thomas.
+&quot;Dynamical consequences of sensory feedback in a half-center oscillator
+coupled to a simple motor system.&quot;&nbsp;<i>Biological Cbernetics</i>&nbsp;115.2
+(2021): 135-160.</span></p>
+
+<p class=MsoNormal style='margin-top:.25in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in;background:white'><b><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif;color:#1F2328'>3-RespirationLoop</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>RespirationLoop</span></b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>&nbsp;is adapted from a
+closed-loop respiratory model from Diekman, Casey O., Peter J. Thomas, and
+Christopher G. Wilson. &quot;Eupnea, tachypnea, and autoresuscitation in a
+closed-loop respiratory control model.&quot;&nbsp;<i>Journal of Neurophysiology</i>&nbsp;118.4
+(2017): 2194-2215.</span></p>
+
+<p class=MsoNormal style='margin-top:.25in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in;background:white'><b><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif;color:#1F2328'>4-NonsmoothOscillator</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>NonsmoothOscillator</span></b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>&nbsp;is a simple (1D)
+non-smooth forced oscillator model.</span></p>
+
+<p class=MsoNormal style='margin-top:.25in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in;background:white'><b><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif;color:#1F2328'>5-AplysiaLoop</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>AplysiaLoop</span></b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>&nbsp;is adapted from a
+closed-loop model of the feeding motor system in Aplysia californica from Shaw,
+Kendrick M., David N. Lyttle, Jeffrey P. Gill, Miranda J. Cullins, Jeffrey M.
+McManus, Hui Lu, Peter J. Thomas, and Hillel J. Chiel. &quot;The significance
+of dynamical architecture for adaptive responses to mechanical loads during
+rhythmic behavior.&quot;&nbsp;<i>Journal of Computational Neuroscience</i>&nbsp;38
+(2015): 25-51., Lyttle, David N., Jeffrey P. Gill, Kendrick M. Shaw, Peter J.
+Thomas, and Hillel J. Chiel. &quot;Robustness, flexibility, and sensitivity in
+a multifunctional motor control model.&quot;&nbsp;<i>Biological Cybernetics</i>&nbsp;111
+(2017): 25-47., and Wang, Y., Gill, J. P., Chiel, H. J., &amp; Thomas, P. J.
+(2022). Variational and phase response analysis for limit cycles with hard
+boundaries, with applications to neuromechanical control problems.&nbsp;<i>Biological
+Cybernetics</i>, 1-24.</span></p>
+
+<p class=MsoNormal style='margin-top:.25in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in;background:white'><b><span style='font-size:18.0pt;font-family:
+"Segoe UI",sans-serif;color:#1F2328'>6-LotkaVolterra</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>LotkaVolterra</span></b><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>&nbsp;is based on the
+classic Lotka-Volterra two-population predator-prey model&nbsp;<a
+href="https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations"><span
+style='text-decoration:none'>(https://en.wikipedia.org/wiki/Lotka-Volterra_equations)</span></a>.</span></p>
+
+<p class=MsoNormal style='margin-top:.25in;margin-right:0in;margin-bottom:12.0pt;
+margin-left:0in;background:white'><b><span style='font-size:24.0pt;font-family:
+"Segoe UI",sans-serif;color:#1F2328'>PointerBuilder apps</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><span
+style='font-family:"Segoe UI",sans-serif;color:#1F2328'>These applications are
+graphical interfaces for working with NEURON pointers. They can be used to
+learn and verify pointer syntax.</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='color:#1F2328;margin-top:12.0pt;margin-bottom:12.0pt;
+     background:white'><b><span style='font-family:"Segoe UI",sans-serif'>NEURON:</span></b><span
+     style='font-family:"Segoe UI",sans-serif'>&nbsp;This graphical interface,
+     written entirely in NEURON, creates pointer instructions in hoc syntax.</span></li>
+ <li class=MsoNormal style='color:#1F2328;margin-top:12.0pt;margin-bottom:12.0pt;
+     background:white'><b><span style='font-family:"Segoe UI",sans-serif'>Python:</span></b><span
+     style='font-family:"Segoe UI",sans-serif'>&nbsp;This graphical interface,
+     written entirely in Python, creates pointer instructions in Python syntax.
+     It requires the Tkinter package, which is common to most Python
+     installations.</span></li>
+</ul>
+</div>
+
+</body>
+
+</html>
